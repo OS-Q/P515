@@ -1,0 +1,38 @@
+{
+  "build": {
+    "cpu": "cortex-m3",
+    "extra_flags": "",
+    "f_cpu": "80000000L",
+    "mcu": "w600",
+    "ldscript": "link_w600_1m.ld",
+	"variant": "generic"
+  },
+  "debug": {
+    "default_tools": [
+      "stlink"
+    ],
+    "jlink_device": "W600",
+    "openocd_board": "w600_stlink",
+    "svd_path": "<none>"
+  },
+  "frameworks": [
+    "wm60x-sdk",
+    "arduino"
+  ],
+  "name": "WizFi360-EVB-Mini",
+  "upload": {
+    "maximum_ram_size": 229376,
+    "maximum_size": 1048576,
+    "protocol": "serial",
+    "resetmethod": "none",
+    "offset_address": "0x8010000",
+    "protocols": [
+      "jlink",
+      "stlink",
+      "serial"
+    ],
+    "speed": 1000000
+  },
+  "url": "http://wizwiki.net/wiki/doku.php/products:wizfi360:board:wizfi360-evb-mini:start",
+  "vendor": "WinnerMicro"
+}
